@@ -51,6 +51,38 @@ describe "fizzbuzz" do
       expect(@rezultat).to eq("fizz")
     end
 
+    it "za 7 vraca 7" do
+      @fizzbuzz = Fizzbuzz.new(7)
+
+      @rezultat = @fizzbuzz.check
+
+      expect(@rezultat).to eq(7)
+    end
+
+    it "za 8 vraca 8" do
+      @fizzbuzz = Fizzbuzz.new(8)
+
+      @rezultat = @fizzbuzz.check
+
+      expect(@rezultat).to eq(8)
+    end
+
+    it "za 9 vraca fizz" do
+      @fizzbuzz = Fizzbuzz.new(9)
+
+      @rezultat = @fizzbuzz.check
+
+      expect(@rezultat).to eq("fizz")
+    end
+
+    it "za 10 vraca buzz" do
+      @fizzbuzz = Fizzbuzz.new(10)
+
+      @rezultat = @fizzbuzz.check
+
+      expect(@rezultat).to eq("buzz")
+    end
+    
     it "za 15 vraca fizzbuzz" do
       @fizzbuzz = Fizzbuzz.new(15)
 
